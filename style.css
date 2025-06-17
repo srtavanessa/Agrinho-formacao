@@ -1,1 +1,227 @@
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
 
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header */
+.main-header {
+    background-color: #388E3C; /* Um verde forte, remetendo ao campo */
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.internal-header {
+    background-color: #1976D2; /* Um azul mais urbano para a página de conexão */
+}
+
+/* Footer */
+.main-footer {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+/* Home Page Specifics */
+.home-content {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    padding: 2.5rem;
+    text-align: center;
+    max-width: 700px;
+}
+
+.intro-card h2 {
+    color: #4CAF50; /* Verde vibrante */
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro-card p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+    background-color: #388E3C; /* Verde mais escuro */
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* Connection Page Specifics */
+.connection-content {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+.section-block {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+.section-block h2 {
+    color: #1976D2; /* Azul para títulos na página de conexão */
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.section-block p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.highlight-section {
+    background-color: #E3F2FD; /* Um azul bem clarinho para destaque */
+    border-left: 6px solid #2196F3; /* Borda azul para destaque */
+    padding: 2.5rem;
+}
+
+.highlight-section h2 {
+    color: #2196F3; /* Azul mais vibrante para destaque */
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-header p {
+        font-size: 1rem;
+    }
+
+    .intro-card {
+        padding: 1.5rem;
+    }
+
+    .intro-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-block {
+        padding: 1.5rem;
+    }
+
+    .section-block h2 {
+        font-size: 1.6rem;
+    }
+
+    .gallery-img {
+        max-width: 90%;
+    }
+
+    .content-img {
+        height: 200px;
+    }
+}
